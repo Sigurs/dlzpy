@@ -5,7 +5,7 @@ This has been made for the XS variant, but untested and experimental support for
 
 Initial working version was made in under 24h after receiving the device. \
 Not the prettiest Python code ever writen, but it's simple and does it's job. \
-This should be considered proof-of-concept - but it works pretty well for me. \
+This should be considered proof-of-concept - but it works pretty well for me.
 
 ## "What is this?" and reason for existing
 
