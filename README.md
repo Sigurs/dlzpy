@@ -59,6 +59,14 @@ Installation steps:
 3. Turn off your DLZ for 5 seconds and turn it on.
    Not working? Try rebooting your machine.
 
+## Uninstall
+There is no script for uninstall, but you can check the install script and undo what it does.
+Most importantly:
+- Delete /opt/dlzpy
+- Remove the udev rule /etc/udev/rules.d/60-dlzpy.rules
+- Remove either the whole file /etc/asound.conf or the contents added by the installation script.
+
+
 ## Notices
 
 
