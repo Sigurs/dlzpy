@@ -1,3 +1,7 @@
 # Mackie DLZ Creator XS
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="0a73", ATTRS{idProduct}=="003a", GROUP="dlzpy", MODE="0660"
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0a73", ATTRS{idProduct}=="003a", RUN+="/usr/bin/sudo -u dlzpy /opt/dlzpy/scripts/udev.sh"
+
+# Mackie DLZ Creator
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0a73", ATTRS{idProduct}=="0033", GROUP="dlzpy", MODE="0660"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0a73", ATTRS{idProduct}=="0033", RUN+="/usr/bin/sudo -u dlzpy /opt/dlzpy/scripts/udev.sh"

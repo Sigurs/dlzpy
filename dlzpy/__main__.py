@@ -20,7 +20,27 @@ def retry(max_retries, wait_time):
 
 @retry(5, 0.1)
 def find_device():
-    return usb.core.find(idVendor=0x0a73, idProduct=0x003a)
+
+    dev = None
+
+    if dev is None:
+        # Mackie DLZ Creator XS
+        try:
+            dev = usb.core.find(idVendor=0x0a73, idProduct=0x003a)
+        except Exception as e:
+            dev = None
+
+    if dev is None:
+        # Mackie DLZ Creator
+        try:
+            dev = usb.core.find(idVendor=0x0a73, idProduct=0x0033)
+        except Exception as e:
+            dev = None
+
+    if dev is None:
+        raise ValueError('Device not found')
+
+    return dev
 
 if __name__ == '__main__':
 
