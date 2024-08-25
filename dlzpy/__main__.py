@@ -137,16 +137,15 @@ if __name__ == '__main__':
             print(f'Received: {resp}')
             exit(1)
 
-    # Release interfaces
+    ## Release interfaces
     print(f'Releasing interfaces...')
     for intf in cfg:
         usb.util.release_interface(dev, intf.bInterfaceNumber)
 
-    # Reattach kernel drivers so we don't have to physically replug the device.
+    ## Reattach kernel drivers so we don't have to physically replug the device.
     print(f'Reattaching kernel drivers...')
     for managed in kernel_managed:
         try:
-            # print(f'Reattaching kernel driver for: {managed}')
             dev.attach_kernel_driver(managed)
         except usb.core.USBError as e:
             pass

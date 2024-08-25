@@ -8,7 +8,6 @@ This should be considered proof-of-concept - but it seems to work pretty well fo
 
 ## "What is this?" and reason for existing
 
----
 ### What dlzpy does
 The Python code itself recreates the initialization that the official driver does on Windows to the DLZ Creator XS from the moment of attaching the device to just before playing any audio.
 
@@ -33,7 +32,6 @@ I do not have access to a Mac to test this, so it's just a guess at this point.
 
 ## Known Issues
 
----
 ### Known issues
 - Does not handle resume from suspend if the device was turned off.
   - Workaround: Power cycle the USB device.
@@ -50,7 +48,6 @@ I do not have access to a Mac to test this, so it's just a guess at this point.
 
 ## Installation
 
----
 Requirements: Relatively new Python3.
 
 1. Clone the repo: ```git clone https://github.com/Sigurs/dlzpy.git ```
@@ -60,7 +57,6 @@ Requirements: Relatively new Python3.
 
 ## Notices
 
----
 
 This project is not affiliated with Mackie / Loud Audio, LLC. \
 Mackie is a trademark of Loud Audio, LLC.
