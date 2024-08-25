@@ -27,8 +27,13 @@ sudo -u dlzpy /opt/dlzpy/scripts/setup-venv.sh
 cp -fR $SCRIPT_DIR/configs/udev/60-dlzpy.rules /etc/udev/rules.d/
 
 # Copy asound.conf
-# MIGHT EXIST SO BACKUP OLD ONE?
 cp -fR $SCRIPT_DIR/configs/alsa/asound.conf /etc/
+
+if [ -e "/etc/asound.conf" ]; then
+    echo "/etc/asound.conf already exists! Please merge $SCRIPT_DIR/configs/alsa/asound.conf with your existing file."
+else
+  cp -fR $SCRIPT_DIR/configs/alsa/asound.conf /etc/
+fi
 
 # Pipewire needs to be restarted to reload alsa config.
 # Easiest way is just to kill it.
