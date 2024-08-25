@@ -1,4 +1,4 @@
-# WARNING
+## WARNING
 **Using this project could brick or render your device or your computer inoperable.\
 Use at your own risk.\
 This has been made for the XS variant, but untested and experimental support for the non-XS also exists.**
