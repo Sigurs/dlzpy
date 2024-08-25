@@ -50,6 +50,7 @@ I do not have access to a Mac to test this, so it's just a guess at this point.
 ## Installation
 
 ---
+Requirements: Relatively new Python3.
 
 3. Clone the repo: ```git clone https://github.com/Sigurs/dlzpy.git ```
 2. Run: ```cd dlzpy && sudo ./install.sh```
