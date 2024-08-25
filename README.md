@@ -53,9 +53,10 @@ I do not have access to a Mac to test this, so it's just a guess at this point.
 ---
 Requirements: Relatively new Python3.
 
-3. Clone the repo: ```git clone https://github.com/Sigurs/dlzpy.git ```
+1. Clone the repo: ```git clone https://github.com/Sigurs/dlzpy.git ```
 2. Run: ```cd dlzpy && sudo ./install.sh```
-
+3. Turn off your DLZ for 5 seconds and turn it on.
+   Not working? Try rebooting your machine.
 
 ## Notices
 

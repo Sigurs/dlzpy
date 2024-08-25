@@ -35,6 +35,11 @@ else
   cp -fR $SCRIPT_DIR/configs/alsa/asound.conf /etc/
 fi
 
-# Pipewire needs to be restarted to reload alsa config.
-# Easiest way is just to kill it.
+# Trying to avoid the need for a reboot.
+## Reload udev rules
+udevadm control --reload-rules
+
+## Pipewire needs to be restarted to reload alsa config.
+## Easiest way is just to kill it.
 pkill pipewire -9
+
