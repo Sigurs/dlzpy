@@ -1,7 +1,7 @@
 # WARNING
 **Using this project could brick or render your device or your computer inoperable.\
 Use at your own risk.\
-I personally run the XS variant. Support for non-XS is completely untested and experimental.**
+This has been made for the XS variant, but untested and experimental support for the non-XS also exists.**
 
 Initial working version was made in under 24h after receiving the device. \
 This should be considered proof-of-concept - but it seems to work pretty well for me.
