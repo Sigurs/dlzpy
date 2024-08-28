@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/bash
 
 
 python3 -m venv /opt/dlzpy/.venv

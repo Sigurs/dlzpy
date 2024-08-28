@@ -2,13 +2,13 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# Cleanup any old installation files
+rm -fR /opt/dlzpy/*
+
 # Add a service account.
-useradd -r dlzpy
+useradd -r dlzpy -d /opt/dlzpy
 
-# Cleanup any old dlzpy files
-rm -fR /opt/dlzpy/
-
-# Create a location for the utility
+# Make sure we have a location for the utility
 mkdir /opt/dlzpy
 
 # Copy files over to installation dir
@@ -42,4 +42,3 @@ udevadm control --reload-rules
 ## Pipewire needs to be restarted to reload alsa config.
 ## Easiest way is just to kill it.
 pkill pipewire -9
-
