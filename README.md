@@ -39,11 +39,6 @@ I do not have access to a Mac to test this, so it's just a guess at this point.
 - Sometimes the automatic initialization does not work.
   - Solution 1: Power cycle the USB device.
   - Solution 2: Manually run the initialization ```sudo -u dlzpy /opt/dlzpy/scripts/udev.sh``` and restart pipewire ```pkill -9 pipewire```
-- Considerably less stable on Ubuntu than Arch.
-  - Udev rules don't seem to trigger automatically
-  - Python script itself works only part of the time?
-  - Pipewire not updating?
-
 
 ### TODO
 - Alsa configuration for different channels.
