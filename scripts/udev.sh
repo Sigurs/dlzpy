@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/bash
 
 # Activate the venv, run the python code and deactivate the venv
 
